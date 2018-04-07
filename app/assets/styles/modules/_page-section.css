@@ -1,5 +1,9 @@
 .page-section {
-  margin: 4.5rem 0;
+  margin: 1.5rem 0;
+
+  @mixin atSmall {
+    margin: 4.5rem;
+  }
 
   &--blue {
     background-color: $mainBlue;
