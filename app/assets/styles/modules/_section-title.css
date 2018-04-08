@@ -16,6 +16,8 @@
     margin: 1rem auto;
 
     @mixin atSmall {
+      position: relative;
+      top: 1rem;
       display: inline-block;
       margin: 0;
     }
@@ -23,5 +25,9 @@
 
   &--text-centered {
     text-align: center;
+  }
+
+  &--blue {
+    color: $mainBlue;
   }
 }

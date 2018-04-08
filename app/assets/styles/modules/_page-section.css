@@ -1,5 +1,5 @@
 .page-section {
-  margin: 1.5rem 0;
+  padding: 1.5rem 0;
 
   @mixin atSmall {
     margin: 4.5rem;
@@ -8,5 +8,32 @@
   &--blue {
     background-color: $mainBlue;
     color: #fff;
+  }
+
+  &--no-b-padding-until-lg {
+    padding-bottom: 0;
+
+    @mixin atLarge {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &--testimonials {
+    background: linear-gradient(
+      to bottom,
+      #e1ffff 0%,
+      #e1ffff 7%,
+      #e1ffff 12%,
+      #fdffff 12%,
+      #e6f8fd 30%,
+      #c8eefb 54%,
+      #bee4f8 75%,
+      #b1d8f5 100%
+    );
+
+    @mixin atLarge {
+      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      background-size: cover;
+    }
   }
 }
