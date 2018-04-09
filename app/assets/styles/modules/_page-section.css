@@ -1,10 +1,6 @@
 .page-section {
   padding: 1.5rem 0;
 
-  @mixin atSmall {
-    margin: 4.5rem;
-  }
-
   &--blue {
     background-color: $mainBlue;
     color: #fff;
@@ -19,6 +15,7 @@
   }
 
   &--testimonials {
+    padding: 0;
     background: linear-gradient(
       to bottom,
       #e1ffff 0%,
