@@ -12,11 +12,16 @@
 
   &__text-content {
     position: absolute;
+    padding-top: 5rem;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+
+    @mixin atMedium {
+      padding-top: 4.375rem;
+    }
   }
 
   &__title {

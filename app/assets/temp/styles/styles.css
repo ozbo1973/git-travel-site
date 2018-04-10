@@ -402,12 +402,20 @@ a {
 
 .large-hero__text-content {
     position: absolute;
+    padding-top: 5rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.large-hero__text-content {
+      padding-top: 4.375rem
+  }
   }
 
 .large-hero__title {
@@ -965,6 +973,77 @@ a {
     background-position:36.69752421959096% 30.685567010309278%
   }
 
+.site-header {
+  padding: 0.75rem 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+    background-color: rgba(47,85,114, 0.4)
+}
+  }
+
+.site-header__btn-container {
+    padding: 0.75rem;
+    float: right;
+  }
+
+.site-header__logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(0.9);
+            transform: translateX(-50%) scale(0.9);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    top: 0;
+    background-color: #2f5572;
+    padding: 1.875rem 2.5rem 1.5625rem 2.5rem;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+      left: auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+  }
+  }
+
+.site-header__logo__graphic {
+    text-indent: -9999px;
+  }
+
+.site-header__menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
+.site-header__menu-content {
+    display: none;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-content {
+      display: block
+  }
+  }
+
 .site-footer {
   background-color: #2f5572;
   color: #fff;
@@ -985,4 +1064,33 @@ a {
       margin-right: 3.25rem;
       margin-bottom: 0
   }
+  }
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary-nav li {
+    list-style: none;
+    padding-right: 1.25rem;
+    float: left;
+  }
+
+.primary-nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+    padding: 1.01rem 0;
   }
