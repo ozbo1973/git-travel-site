@@ -1,4 +1,3 @@
-const Person = require("./modules/Person");
+import MobileMenu from "./modules/MobileMenu";
 
-const john = new Person("John Doe", "blue");
-const jane = new Person("Jane Smyth", "red");
+const mobileMenu = new MobileMenu();
