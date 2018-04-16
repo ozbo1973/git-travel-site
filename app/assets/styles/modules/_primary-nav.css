@@ -1,6 +1,7 @@
 .primary-nav {
   &--pull-right {
     padding-top: 1.2rem;
+
     @mixin atMedium {
       float: right;
       padding-top: 0;
@@ -47,6 +48,10 @@
       padding: 1.01rem 0;
       font-size: 1rem;
       background-color: transparent;
+
+      &.is-current-link {
+        color: #fabb69;
+      }
     }
   }
 }
