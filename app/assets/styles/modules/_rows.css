@@ -61,7 +61,7 @@
     }
 
     /*## begin equal height rules */
-    &--equal-height-at-medium {
+    .flexbox &--equal-height-at-medium {
       display: flex;
 
       & > div {
@@ -100,7 +100,7 @@
     }
 
     /*## begin equal height rules */
-    &--equal-height-at-lg {
+    .flexbox &--equal-height-at-lg {
       display: flex;
 
       & > div {
