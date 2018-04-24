@@ -4,3 +4,4 @@ require(pth + "scripts");
 require(pth + "sprite");
 require(pth + "watch");
 require(pth + "modernizr");
+require(pth + "build");
